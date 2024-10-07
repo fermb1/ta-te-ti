@@ -1,0 +1,83 @@
+:root {
+  --primary-bg: #0b090a;
+  --secondary-bg: #161a1d;
+  --shadow-light: #161a1d;
+  --shadow-dark: #660708;
+  --shadow-deep: #660708;
+  --card-radius: 56px;
+  --square-size: 100px;
+}
+
+.square {
+  border-radius: 10px;
+  height: var(--square-size);
+  width: var(--square-size);
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.square:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
+}
+
+.description{
+  text-align: center;
+  font-size: 20px;
+}
+.status{
+  font-size: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 10px;
+}
+
+.board-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.card {
+  width: 500px;
+  height: 500px;
+  border-radius: var(--card-radius);
+  background: linear-gradient(145deg, var(--shadow-light), var(--secondary-bg));
+  box-shadow: 6px 6px 12px var(--shadow-deep), -6px -6px 12px var(--shadow-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.sectionBoard {
+  margin-top: 100px;
+  border-radius: 32px;
+  background: linear-gradient(145deg, var(--primary-bg), var(--secondary-bg));
+  box-shadow: 5px 5px 10px var(--shadow-dark), -5px -5px 10px var(--shadow-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: box-shadow 0.3s ease;
+}
+
+.sectionBoard:hover {
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.15), -8px -8px 16px #660708;
+}
+
+.status {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
